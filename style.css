@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: lavender;
+    color: ghostwhite;
+    overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+#right{
+    flex: 1;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* sign-in */
+
+#signin{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 80%;
+ padding: 1rem;
+}
+
+#signin form{
+    width: 80%;
+    padding-bottom: 2rem;
+}
+
+#signin #logo{
+    margin-bottom: 40px;
+}
+
+#signin #logo img{
+    width: 300px;
+}
+
+#signin label{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #0000ff5d;
+
+}
+#signin .text-input{
+    margin-bottom: 1.3rem;
+    width: 100%;
+    border-radius: 2px;
+    background-color:lavender;
+    border: 2px solid white;
+    color: gainsboro;
+    padding: 0.5rem;
+    line-height: 1.3rem;
+
+}
+#signin #link,#or,.bt2{
+    width: 60%;
+}
+#signin #link a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+#signin #link{
+    text-align: center;
+}
+#signin #or{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+#signin #bar{
+    flex: auto;
+    border: none;
+    height: 1px;
+    background: white;
+}
+#signin span{
+    padding: 0px 4px;
+}
+/* media */
+@media(min-width:1000px){
+    #left{
+        flex: 4;
+    }
+    #right{
+        flex: 6;
+    }
+}
+
+
+/* butthon */
+#bt1{
+    width: 100%;
+    padding: 8px;
+    display: block;
+    border: none;
+    font-weight: 500;
+    border-radius: 2px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+#bt1:hover{
+    background-color: #f3ac29f3;
+}
+
+.bt2{
+    padding: 8px;
+    display: block;
+    border: 2px solid white;
+    font-weight: 500;
+    border-radius: 2px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.bt2:hover{
+    color:#f3ac29f3;
+}
+
+/*footer */
+.main footer{
+    padding-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.main footer a{
+    color: orange;
+}
+
+.showcase{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/956/284/871/3d-blue-digital-art-purple-wallpaper-preview.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+ 
+}
+
+.showcase .bt2{
+    width: 400px
+}
+.showcase h1{
+    font-weight: 700;
+}

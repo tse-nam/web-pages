@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-color: whitesmoke;
+    line-height: 1.5;
+}
+
+.main{
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+}
+.h-main1{
+    background-color: black;
+}
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    width: 90%;
+    max-width: 100%;
+    padding: 20px 30px;
+}
+
+.navbar ul{
+    list-style: none;   
+}
+.nav-menu  li a{
+    text-decoration: none;
+    color: white;
+}
+.nav-menu  li {
+    padding-left: 40px;
+}
+
+.nav-menu li a:hover{
+    border-bottom: 1px solid white;
+}
+.navbar .nav-menu{
+    display: flex;
+    align-items: center;
+
+}
+
+#right-menu{
+    display: flex;
+
+}
+#right-menu i{
+    padding-left: 40px;
+    color: white;
+}
+
+/*header*/
+.head{
+    position: sticky;
+    top: 0;
+    background-color: #ffffffb4;
+    z-index:100
+  }
+.main-left li a{
+    text-decoration: none;
+    color: #000000aa;
+}
+.main-left li {
+    padding-left: 10px; 
+}
+.main-left li a:hover{
+    border-bottom: 1px solid gray;
+}
+header div h1{
+    color:#000000aa;
+    font-weight: lighter;
+}
+
+.main-left{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.left-menu{
+    display: flex;
+}
+header .bt1{
+    margin-left: 10px;
+    color: white;
+    background-color: #37aad0;
+    padding:  0px 4px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+hr{
+    width: 55%;
+    position: relative;
+    left: 340px;
+    color: #000000aa;
+}
+
+/*intro*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro .ione h1{
+    width: 60%;
+    font-weight: lighter;
+    font-size: 40px;
+    padding-top: 30px;
+}
+.intro .itwo {
+    width: 60%;
+}
+.intro .itwo h1{
+    font-weight: 100;
+    font-size: 40px;
+    font-weight: 100;
+    color: gray;
+
+}
+.intro .ithree{
+    width: 60%;
+    padding-top: 30px;
+}
+
+.intro-img img{
+    width: 70%;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 10px 0px;
+}
+/*music*/
+.music-logo ul{
+    display: flex;
+    list-style: none ;
+    padding-top: 130px;   
+}
+.music-logo ul li h1{
+    width: 60%;
+    font-weight: lighter;
+    font-size: 25px;
+}
+.music-logo ul li i{
+    font-size: 30px;
+    padding-top: 2px;
+}
+
+.m-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro .itwo {
+    width: 60%;
+}
+.m-intro .itwo h1{
+    font-weight: 100;
+    font-size: 40px;
+    font-weight: 100;
+    color: gray;
+}
+
+.m-intro .ithree{
+    width: 60%;
+    padding-top: 30px;
+}
+.bt2{
+    background-color: #ea5f76;
+    width: 90px;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: hsla(0, 3%, 42%, 0.3);
+    height: 80px;
+    position: relative;
+    top:110px;   
+}
+@media(max-width: 800px){
+    .navbar .nav-menu{
+        display: none;
+    }
+}
